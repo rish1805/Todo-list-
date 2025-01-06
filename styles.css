@@ -1,0 +1,61 @@
+:root {
+  --gradient: linear-gradient(135deg, #6a1b9a 0%, #1e88e5 50%, #00bcd4 100%);
+  --white: #ffffff;
+  /* Add any other required variables */
+}
+
+body{
+    background: #352f5b;
+  }
+
+.container{
+  max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.todos li{
+  background: #423a6f;
+}
+
+.delete{
+  cursor: pointer;
+}
+
+.filtered{
+  display: none !important; /* VERY IMPORTANT */
+}
+
+footer {
+    background: #423a6f;
+    color: #fff;
+    padding: 10px 20px; /* Ensures space around the text */
+    border-radius: 20px; /* Creates smooth, curved edges */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a modern shadow effect */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    text-align: center; /* Ensures text alignment within the box */
+    min-width: 100px; /* Ensures a minimum width for smaller content */
+    min-height: 50px; /* Ensures a minimum height for smaller content */
+}
+
+body {
+  background: var(--gradient); /* Apply the gradient background */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures proper spacing for elements */
+  align-items: center;
+  color: var(--white); /* Set default text color for better visibility */
+}
